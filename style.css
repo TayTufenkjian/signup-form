@@ -21,14 +21,14 @@ main {
 }
 
 #heroImage-caption {
-    bottom: 2rem;
+    bottom: 3rem;
+    font-family: 'Cormorant', serif;
     margin: 0 auto;
     position: relative;
 }
 
 #heroImage-caption, #heroImage-caption a {
     color: #fff;
-    font-size: 0.75rem;
 }
 
 .imageContent {
@@ -68,6 +68,8 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
     justify-content: center;
     padding: 0 3rem;
 }
