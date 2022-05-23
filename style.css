@@ -46,7 +46,6 @@ main {
     justify-content: center;
     margin: 0 auto;
     position: relative;
-    text-transform: uppercase;
     width: 100%;
 }
 
@@ -58,6 +57,10 @@ main {
     color: rgba(255, 255, 255, 1);
 }
 
+.imageContent-overlay h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4rem;
+}
 
 /* Text content, including the form */
 
