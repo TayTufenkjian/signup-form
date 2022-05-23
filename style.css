@@ -1,20 +1,29 @@
 body {
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100vh;
     margin: 0;
     padding: 0;
 }
 
+#caption {
+    position: relative;
+    bottom: 3rem;
+}
+
 main {
     display: flex;
+    height: 100vh;
 }
 
 .image-content {
-    width: 33%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .image-content img {
-    max-width: 100%;
+    height: 100%;
 }
 
 .text-content {
@@ -23,11 +32,6 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 0 3rem;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
 }
 
 form {
