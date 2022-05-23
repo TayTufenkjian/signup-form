@@ -1,3 +1,10 @@
+/* Custom properties */
+:root {
+    --custom-font: 'Cormorant', serif;
+    --leaf-green: #577048;
+    --dark-leaf-green: #21351C;
+}
+
 /* General layout */
 
 * {
@@ -25,7 +32,7 @@ main {
 
 #heroImage-caption {
     bottom: 3rem;
-    font-family: 'Cormorant', serif;
+    font-family: var(--custom-font);
     margin: 0 auto;
     position: relative;
 }
@@ -65,18 +72,21 @@ main {
     font-size: 4rem;
 }
 
-/* Text content, including the form */
 
-.text-content {
-    align-items: center;
-    background: #f9f9f9;
-    color: #444;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Cormorant', serif;
+/* Text content, including the form */
+button {
+    background: var(--leaf-green);
+    border: 1px solid var(--leaf-green);
+    border-radius: 10px;
+    color: #fff;
+    font-family: var(--custom-font);
     font-size: 1.5rem;
-    justify-content: center;
-    width: 100%;
+    padding: 1rem 2rem;
+}
+
+button:hover {
+    background: var(--dark-leaf-green);
+    cursor: pointer;
 }
 
 .formContainer  {
@@ -110,5 +120,25 @@ form input {
 
 section {
     padding: 2rem 3rem;
+    width: 100%;
+}
+
+section a {
+    color: var(--leaf-green);
+}
+
+section a:hover {
+    color: var(--dark-leaf-green);
+}
+
+.text-content {
+    align-items: center;
+    background: #f9f9f9;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--custom-font);
+    font-size: 1.5rem;
+    justify-content: center;
     width: 100%;
 }
