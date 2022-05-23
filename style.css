@@ -1,0 +1,35 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+}
+
+.image-content {
+    width: 33%;
+}
+
+.image-content img {
+    max-width: 100%;
+}
+
+.text-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.formWidget {
+    display: grid; 
+    grid-template-rows: auto auto;
+}
