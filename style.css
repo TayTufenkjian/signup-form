@@ -22,12 +22,26 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 3rem;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 form {
     display: grid;
     grid-template-columns: auto auto;
     gap: 2rem;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input {
+    height: 1.5rem;
 }
 
 .formWidget {
