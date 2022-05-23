@@ -7,8 +7,13 @@ body {
 }
 
 #caption {
+    bottom: 2rem;
+    margin: 0 auto;
     position: relative;
-    bottom: 3rem;
+}
+
+#caption, #caption a {
+    color: #fff;
 }
 
 main {
