@@ -1,8 +1,9 @@
 /* Custom properties */
 :root {
     --custom-font: 'Cormorant', serif;
-    --leaf-green: #577048;
     --dark-leaf-green: #21351C;
+    --error-red: rgb(223, 11, 11);
+    --leaf-green: #577048;
 }
 
 
@@ -111,7 +112,13 @@ form {
 }
 
 form .error {
-    border: 2px solid rgb(223, 11, 11);
+    border: 2px solid var(--error-red);
+}
+
+#passwordHook::after {
+    content: "* Passwords do not match.";
+    color: var(--error-red);
+    position: absolute;
 }
 
 form label {
