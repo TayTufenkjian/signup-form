@@ -22,7 +22,7 @@ body {
 
 main {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 p {
@@ -52,7 +52,6 @@ p {
     display: flex;
     flex: 1 1 0;
     flex-direction: column;
-    justify-content: space-around;
     min-height: 100%;
 }
 
@@ -62,10 +61,8 @@ p {
     display: flex;
     height: 8rem;
     justify-content: center;
-    margin: 0 auto;
     position: relative;
     top: 20%;
-    width: 100%;
 }
 
 .imageContent-overlayContainer {
@@ -169,7 +166,6 @@ section a:hover {
 }
 
 .text-content {
-    align-items: center;
     background: #f9f9f9;
     color: #222;
     display: flex;
@@ -177,5 +173,4 @@ section a:hover {
     flex-direction: column;
     font-family: var(--custom-font);
     justify-content: center;
-    width: 100%;
 }
