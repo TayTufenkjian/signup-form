@@ -116,11 +116,12 @@ form {
     max-width: 80%;
 }
 
-form .error {
+form .error, form .error:focus {
     border: 2px solid var(--error-red);
+    outline: 0;
 }
 
-#passwordHook::after {
+#password-hook::after {
     content: "* Passwords do not match.";
     color: var(--error-red);
     position: absolute;
